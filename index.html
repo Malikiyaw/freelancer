@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Freelance full-stack web developer building professional websites and practical web applications for businesses." />
+    <meta name="description" content="Reyner is a freelance full-stack web developer building professional websites and practical web applications for businesses." />
     <meta name="theme-color" content="#f2f0e9" />
+    <meta name="robots" content="index, follow" />
     <title>Reyner — Freelance Full-Stack Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,75 +15,90 @@
   <body>
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Reyner home">R/</a>
-      <nav aria-label="Primary navigation">
+      <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="#services">Services</a>
         <a href="#capabilities">Capabilities</a>
         <a href="#process">Process</a>
         <a href="#about">About</a>
         <a class="nav-contact" href="#contact">Start a project</a>
       </nav>
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+        <div class="mobile-menu-panel">
+          <a href="#services">Services</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#process">Process</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </details>
     </header>
 
     <main id="top">
-      <section class="hero section-rule">
+      <section class="hero section-rule" aria-labelledby="hero-title">
         <div class="hero-index mono">01 / INTRODUCTION</div>
         <div class="hero-copy">
           <p class="eyebrow mono">FREELANCE FULL-STACK WEB DEVELOPER</p>
-          <h1>Websites that<br /><em>work for the business.</em></h1>
+          <h1 id="hero-title">Websites that<br /><em>work for the business.</em></h1>
           <p class="hero-lede">I build professional websites and web applications for businesses that need a clear, reliable online presence.</p>
           <div class="hero-actions">
-            <a class="button button-dark" href="#contact">Discuss a project <span>↗</span></a>
+            <a class="button button-dark" href="#contact">Start a project <span>↗</span></a>
             <a class="text-link mono" href="#services">View services ↓</a>
           </div>
         </div>
-        <div class="hero-note mono">AVAILABLE FOR SELECT PROJECTS<br />REMOTE · PHILIPPINES</div>
+        <div class="hero-note mono">OPEN FOR FREELANCE INQUIRIES<br />REMOTE · PHILIPPINES</div>
       </section>
 
-      <section id="services" class="services section-rule">
+      <section id="services" class="services section-rule" aria-labelledby="services-title">
         <div class="section-label mono">02 / SERVICES</div>
         <div class="services-intro">
-          <h2>Built around<br /><em>what you need.</em></h2>
+          <h2 id="services-title">Built around<br /><em>what you need.</em></h2>
           <p>From a clinic website to a custom web application, I build the parts your business actually needs.</p>
         </div>
         <div class="service-list">
           <article class="service-item">
             <span class="service-number mono">01</span>
             <div><h3>Business websites</h3><p>Professional websites for companies, clinics, local businesses, and independent services.</p></div>
-            <span class="service-arrow">↗</span>
+            <span class="service-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="service-item">
             <span class="service-number mono">02</span>
-            <div><h3>Booking experiences</h3><p>Clear appointment and booking flows that can work with your existing scheduling system.</p></div>
-            <span class="service-arrow">↗</span>
+            <div><h3>Clinic websites</h3><p>Clear patient-facing websites for dental clinics, healthcare practices, salons, and similar services.</p></div>
+            <span class="service-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="service-item">
             <span class="service-number mono">03</span>
-            <div><h3>Web applications</h3><p>Custom frontend and backend systems built around a specific business process.</p></div>
-            <span class="service-arrow">↗</span>
+            <div><h3>Booking experiences</h3><p>Appointment flows that can work with an existing scheduling or records platform.</p></div>
+            <span class="service-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="service-item">
             <span class="service-number mono">04</span>
-            <div><h3>Dashboards & admin tools</h3><p>Interfaces for managing users, data, services, appointments, and internal operations.</p></div>
-            <span class="service-arrow">↗</span>
+            <div><h3>Web applications</h3><p>Custom frontend and backend systems built around a specific business process.</p></div>
+            <span class="service-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="service-item">
             <span class="service-number mono">05</span>
+            <div><h3>Dashboards & admin tools</h3><p>Interfaces for managing users, data, services, appointments, and internal operations.</p></div>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-item">
+            <span class="service-number mono">06</span>
             <div><h3>AI integrations</h3><p>Useful AI features connected to web applications through APIs and controlled workflows.</p></div>
-            <span class="service-arrow">↗</span>
+            <span class="service-arrow" aria-hidden="true">↗</span>
           </article>
         </div>
       </section>
 
-      <section id="capabilities" class="capabilities section-rule">
+      <section id="capabilities" class="capabilities section-rule" aria-labelledby="capabilities-title">
         <div class="section-label mono">03 / CAPABILITIES</div>
         <div class="capability-layout">
           <div>
-            <h2>Frontend.<br />Backend.<br /><em>Connected.</em></h2>
+            <h2 id="capabilities-title">Frontend.<br />Backend.<br /><em>Connected.</em></h2>
           </div>
           <div class="capability-copy">
             <p>I work across the interface and the systems behind it, so a project can be designed as one product instead of disconnected pieces.</p>
             <div class="stack-table">
-              <div><span class="mono">FRONTEND</span><strong>Next.js · React · TypeScript · Tailwind CSS</strong></div>
+              <div><span class="mono">FRONTEND</span><strong>Next.js · React · TypeScript · JavaScript · CSS</strong></div>
               <div><span class="mono">BACKEND</span><strong>Node.js · Express · REST APIs · WebSockets</strong></div>
               <div><span class="mono">DATA</span><strong>MongoDB · Mongoose · PostgreSQL · SQLite · Redis</strong></div>
               <div><span class="mono">INTEGRATION</span><strong>Discord.js · AI APIs · Stripe · third-party APIs</strong></div>
@@ -92,37 +108,40 @@
         </div>
       </section>
 
-      <section id="process" class="process section-rule">
+      <section id="process" class="process section-rule" aria-labelledby="process-title">
         <div class="section-label mono">04 / PROCESS</div>
-        <div class="process-heading"><h2>A straightforward<br /><em>way to work.</em></h2></div>
+        <div class="process-heading"><h2 id="process-title">A straightforward<br /><em>way to work.</em></h2></div>
         <ol class="process-list">
-          <li><span class="mono">01</span><div><h3>Understand</h3><p>We define the business goal, audience, content, and required functionality.</p></div></li>
-          <li><span class="mono">02</span><div><h3>Design</h3><p>The interface is planned around the actual information people need to find.</p></div></li>
-          <li><span class="mono">03</span><div><h3>Build</h3><p>I develop the frontend, backend, integrations, and responsive behavior.</p></div></li>
-          <li><span class="mono">04</span><div><h3>Test & deploy</h3><p>Important flows are checked before the site is deployed and handed over.</p></div></li>
+          <li><span class="mono">01</span><div><h3>Understand</h3><p>We define the business goal, audience, content, existing systems, and required functionality.</p></div></li>
+          <li><span class="mono">02</span><div><h3>Plan</h3><p>I map the pages, user flows, integrations, and technical requirements before development.</p></div></li>
+          <li><span class="mono">03</span><div><h3>Build</h3><p>I develop the frontend, backend, integrations, responsive behavior, and required content structure.</p></div></li>
+          <li><span class="mono">04</span><div><h3>Test & deploy</h3><p>Important flows are checked across screen sizes before the website is deployed.</p></div></li>
         </ol>
       </section>
 
-      <section id="about" class="about section-rule">
+      <section id="about" class="about section-rule" aria-labelledby="about-title">
         <div class="section-label mono">05 / ABOUT</div>
         <div class="about-layout">
-          <h2>Independent<br /><em>developer.</em></h2>
+          <h2 id="about-title">Independent<br /><em>developer.</em></h2>
           <div>
             <p class="about-lede">I’m a freelance full-stack web developer focused on building modern websites and practical web applications.</p>
-            <p>I handle both the visible interface and the systems behind it. That includes responsive frontend work, APIs, databases, authentication, integrations, and deployment.</p>
-            <p>I prefer clear requirements, direct communication, and software that is useful rather than over-designed for the sake of appearance.</p>
+            <p>I work across the frontend and backend, including responsive interfaces, APIs, databases, authentication, integrations, and deployment.</p>
+            <p>I prefer clear requirements, direct communication, and software that solves the actual problem instead of adding unnecessary complexity.</p>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact section-rule">
+      <section id="contact" class="contact section-rule" aria-labelledby="contact-title">
         <div class="section-label mono">06 / CONTACT</div>
         <div class="contact-layout">
-          <div><p class="eyebrow mono">HAVE A PROJECT IN MIND?</p><h2>Tell me<br /><em>what you need.</em></h2></div>
+          <div><p class="eyebrow mono">HAVE A PROJECT IN MIND?</p><h2 id="contact-title">Tell me<br /><em>what you need.</em></h2></div>
           <div class="contact-panel">
             <p>Send a short description of your business, what you want built, and any existing system the website needs to work with.</p>
-            <a class="contact-email" href="mailto:reynerabdon14@gmail.com">reynerabdon14@gmail.com <span>↗</span></a>
-            <p class="mono small-note">I’ll reply with the next steps.</p>
+            <div class="contact-list">
+              <a class="contact-link" href="mailto:reynerbuensalida@gmail.com"><span class="mono">EMAIL</span><strong>reynerbuensalida@gmail.com</strong><span aria-hidden="true">↗</span></a>
+              <a class="contact-link" href="tel:+639943289549"><span class="mono">PHONE</span><strong>0994 328 9549</strong><span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="mono small-note">Direct contact · Philippines</p>
           </div>
         </div>
       </section>
